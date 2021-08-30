@@ -1,5 +1,5 @@
 # SSR: Semi-supervised Soft Rasterizer for single-view 2D to 3D Reconstruction
-## Accepted at ICCV2021 Workshop [[Paper]](https://arxiv.org/abs/2103.10226)
+## Accepted at ICCV2021 Workshop [[Paper]](https://arxiv.org/abs/2108.09593)
 
 ### 0. Download the Dataset
 
