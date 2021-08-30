@@ -2,7 +2,7 @@
 ## Accepted at ICCV2021 Workshop [[Paper]](https://arxiv.org/abs/2108.09593)
 
 <p align="center" width="100%">
-<img width="100%" src="scripts/highlight.png">
+<img width="75%" src="scripts/highlight.png">
 </p>
 
 ### 0. Download the Dataset
@@ -14,7 +14,7 @@
 ### 2. Train and Validate
 
 ```python
-python trainval.py -e main -sb ../results -d $DATA -r 1
+python trainval.py -e ubl -sb ../results -d $DATA -r 1
 ```
 
 Argument Descriptions:
@@ -27,7 +27,7 @@ Argument Descriptions:
 
 ### 3. Visualize the Results
 
-Follow these steps to visualize plots. Open `results.ipynb`, run the first cell to get a dashboard like in the gif below, click on the "plots" tab, then click on "Display plots". Parameters of the plots can be adjusted in the dashboard for custom visualizations.
+Follow these steps to visualize plots. Open `results.ipynb`, run the first cell to get a dashboard like in the gif below, click on the "plots" tab, then click on "Display plots" or the "images" tab and then click on "Display Images". Parameters of the plots can be adjusted in the dashboard for custom visualizations.
 
 <p align="center" width="100%">
 <img width="100%" src="https://raw.githubusercontent.com/haven-ai/haven-ai/master/docs/vis.gif">
