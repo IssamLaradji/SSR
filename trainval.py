@@ -25,10 +25,10 @@ def trainval(exp_dict, savedir, args):
     np.random.seed(exp_args.seed)
 
     # load dataset and model
-    dataset_train = datasets.ShapeNet(exp_args.dataset_directory, 'train', exp_dict)
-    dataset_val = datasets.ShapeNet(exp_args.dataset_directory, 'val', exp_dict)
-    dataset_test = datasets.ShapeNet(exp_args.dataset_directory, 'test', exp_dict)
-    dataset_unlabeled = datasets.ShapeNet(exp_args.dataset_directory, 'unlabeled', exp_dict)
+    dataset_train = datasets.ShapeNet(args.datadir, 'train', exp_dict)
+    dataset_val = datasets.ShapeNet(args.datadir, 'val', exp_dict)
+    dataset_test = datasets.ShapeNet(args.datadir, 'test', exp_dict)
+    dataset_unlabeled = datasets.ShapeNet(args.datadir, 'unlabeled', exp_dict)
 
     model = models.get_model(exp_dict, train_set=dataset_train, 
                              unlabeled_set=dataset_unlabeled)
@@ -123,6 +123,7 @@ if __name__ == "__main__":
     parser.add_argument('-sb', '--savedir_base', default=None)
     parser.add_argument('-nw', '--num_workers', default=0, type=int)
     parser.add_argument("-db", "--debug",  default=0, type=int)
+    parser.add_argument("-d", "--datadir",  default=None)
     parser.add_argument("-r", "--reset",  default=0, type=int,
                         help='Reset or resume the experiment.')
     args, others = parser.parse_known_args()

@@ -5,14 +5,12 @@ EXP_GROUPS = {}
 def get_base(ddict):
     base = {"batch_size": 64,
         
-        "dataset_directory": "/mnt/public/datasets2/softras/mesh_reconstruction",
         "image_size": 64,
        
         "lambda_flatten": 0.0005,
         "lambda_laplacian": 0.005,
         "learning_rate": 0.0001,
         "lr_type": "step",
-        "model_directory": "/mnt/public/datasets2/softras/results/models",
         "reset": 1,
         "seed": 0,
         "sigma_val": 0.0001,
@@ -25,17 +23,11 @@ def get_base(ddict):
 EXP_GROUPS['upperbound'] =  hu.cartesian_exp_group(get_base(
         {"loss":[
                [{"name":'base'}],
-               
-                
                 ],
-        #  "n_train_ratio":[None
-        # ],
-
-        # "mem":[True],
          "n_val_ratio":[0.10],
          'epochs':1000,
         "version":[4],
-        # "pretrained":[None],
+
         "classes": [['Airplane'],
        ['Car'], ['Chair'], 
        ['Cabinet'],

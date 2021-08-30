@@ -7,6 +7,10 @@
 
 ### 0. Download the Dataset
 
+```
+bash scripts/download_dataset.sh
+```
+
 ### 1. Install requirements
 
 `pip install -r requirements.txt` 
