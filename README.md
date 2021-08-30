@@ -2,7 +2,7 @@
 ## Accepted at ICCV2021 Workshop [[Paper]](https://arxiv.org/abs/2108.09593)
 
 <p align="center" width="100%">
-<img width="75%" src="scripts/highlight.png">
+<img width="75%" src="scripts/highlights2.png">
 </p>
 
 ### 0. Download the Dataset
