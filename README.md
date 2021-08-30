@@ -32,4 +32,11 @@ Follow these steps to visualize plots. Open `results.ipynb`, run the first cell 
 
 ## Cite
 
-TBD
+```
+@article{laradji2021ssr,
+  title={SSR: Semi-supervised Soft Rasterizer for single-view 2D to 3D Reconstruction},
+  author={Laradji, Issam and Rodr{\'\i}guez, Pau and Vazquez, David and Nowrouzezahrai, Derek},
+  journal={arXiv preprint arXiv:2108.09593},
+  year={2021}
+}
+```
