@@ -15,6 +15,13 @@ bash scripts/download_dataset.sh
 
 `pip install -r requirements.txt` 
 
+and the `SoftRas` module
+
+```
+git clone https://github.com/ShichenLiu/SoftRas
+python setup.py install
+```
+
 ### 2. Train and Validate
 
 ```python
